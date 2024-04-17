@@ -10,7 +10,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/clients")
-@CrossOrigin
 public class ClientController {
     private final ClientService clientService;
 
@@ -20,7 +19,12 @@ public class ClientController {
 
     @PostMapping("/add")
     public ResponseEntity<ClientDTO> addClient(@RequestBody ClientDTO clientDTO){
-        return new ResponseEntity<>(clientService.addClient(clientDTO), HttpStatus.CREATED);
+        try {
+            return new ResponseEntity<>(clientService.addClient(clientDTO), HttpStatus.CREATED);
+        }
+        catch (Exception e){
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @PutMapping("/update")

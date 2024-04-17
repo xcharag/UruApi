@@ -13,9 +13,4 @@ public class ClientDTO {
     private String lastName;
     private String gender;
     private String email;
-
-    private List<ClientCreditsDTO> clientCredits = new ArrayList<>();
-    private List<ClientPhoneNumbersDTO> clientPhoneNumbers = new ArrayList<>();
-    private List<ClientPaymenthMethodsDTO> clientAddresses = new ArrayList<>();
-    private List<UserDTO> users = new ArrayList<>();
 }

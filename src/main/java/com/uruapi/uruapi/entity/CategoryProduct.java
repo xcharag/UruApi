@@ -17,6 +17,6 @@ public class CategoryProduct {
     private String name;
     private String description;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "CategoryProduct", fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "categoryProduct", fetch = FetchType.EAGER)
     private List<Product> products = new ArrayList<>();
 }
