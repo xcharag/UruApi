@@ -12,7 +12,7 @@ import lombok.Data;
 public class ClientPhoneNumbers {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idClient;
+    private Long idNumber;
 
     private String phoneNumber;
 
