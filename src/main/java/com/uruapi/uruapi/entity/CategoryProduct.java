@@ -8,7 +8,8 @@ import java.util.List;
 
 @Entity
 @Data
-@Table
+@Table(
+        name = "category_product")
 public class CategoryProduct {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -9,8 +9,7 @@ import java.util.List;
 @Entity
 @Data
 @Table(
-        name = "distributors",
-        schema = "uru_db"
+        name = "distributors"
 )
 public class Distributor {
     @Id

@@ -6,8 +6,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(
-        name = "promotions",
-        schema = "uru_db"
+        name = "promotions"
 )
 public class ShopPromotion {
     @Id

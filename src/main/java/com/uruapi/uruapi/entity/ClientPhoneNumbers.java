@@ -6,8 +6,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(
-        name = "client_phone_numbers",
-        schema = "uru_db"
+        name = "client_phone_numbers"
 )
 public class ClientPhoneNumbers {
     @Id

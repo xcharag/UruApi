@@ -6,8 +6,7 @@ import lombok.Data;
 @Entity
 @Data
 @Table(
-        name = "users",
-        schema = "uru_db"
+        name = "users"
 )
 public class User {
     @Id

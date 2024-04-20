@@ -9,8 +9,7 @@ import java.util.List;
 @Entity
 @Data
 @Table(
-        name = "roles",
-        schema = "uru_db"
+        name = "roles"
 )
 public class EnumRole {
     @Id
